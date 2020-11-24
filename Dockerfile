@@ -8,12 +8,12 @@ FROM debian:buster-slim as builder
 RUN apt-get update && apt-get install -y curl gnupg
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 0x1657198823e52a61  && \
     echo "deb http://download.zerotier.com/debian/buster buster main" > /etc/apt/sources.list.d/zerotier.list
-RUN apt-get update && apt-get install -y zerotier-one=1.6.0
+RUN apt-get update && apt-get install -y zerotier-one=1.4.4
 
 ############################################
 
 FROM debian:buster-slim as zerotier-one
-LABEL version="1.6.0"
+LABEL version="1.4.4"
 LABEL description="Containerized ZeroTier One Moon for use on CoreOS or other Docker-only Linux hosts."
 LABEL maintainer="Toby Yan <me@tobyan.com>"
 
