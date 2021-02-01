@@ -2,7 +2,7 @@ version: "3"
 
 services:
   zerotier-moon:
-    image: toby1991/zerotier-moon:latest
+    image: franzyang/zerotier-moon:latest
     volumes:
       - "./zerotier:/var/lib/zerotier-one"
     ports:
