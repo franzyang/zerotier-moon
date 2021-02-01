@@ -3,6 +3,9 @@
 
 FROM debian:buster-slim as builder
 
+# Add ENV DEBIAN_FRONTED to avoid Redline or Dialog error Msg
+ENV DEBIAN_FRONTEND noninteractive
+
 ## Supports x86_64, x86, arm, and arm64
 
 RUN apt-get update && apt-get install -y curl gnupg
