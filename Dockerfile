@@ -13,9 +13,9 @@ RUN apt-get update && apt-get install -y zerotier-one=1.6.2
 ############################################
 
 FROM debian:buster-slim as zerotier-one
-LABEL version="1.4.4"
+LABEL version="1.6.2"
 LABEL description="Containerized ZeroTier One Moon for use on CoreOS or other Docker-only Linux hosts."
-LABEL maintainer="Toby Yan <me@tobyan.com>"
+LABEL maintainer="Franz Yan <franzyang@gmail.com>"
 
 # ZeroTier relies on UDP port 9993
 EXPOSE 9993/udp
