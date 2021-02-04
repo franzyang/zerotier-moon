@@ -31,7 +31,7 @@ When creating a new container, a new moon id will be generated. To persist the i
 ### Manage ZeroTier
 
 ```
-docker exec zerotier-moon /zerotier-cli
+docker exec zerotier-moon /usr/sbin/zerotier-cli
 ```
 
 ### Mount ZeroTier conf folder
